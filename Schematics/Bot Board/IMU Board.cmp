@@ -1,0 +1,255 @@
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 26.12.2012 15:44:46
+
+BeginCmp
+TimeStamp = /50B25162;
+Reference = C1;
+ValeurCmp = 100uF;
+IdModule  = C2V8;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B25175;
+Reference = C2;
+ValeurCmp = 100nF;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B25185;
+Reference = C3;
+ValeurCmp = 100nF;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B251F0;
+Reference = C4;
+ValeurCmp = 470uF;
+IdModule  = C2V8;
+EndCmp
+
+BeginCmp
+TimeStamp = /50DB0938;
+Reference = C10;
+ValeurCmp = 100nF;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /50BB601F;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /50CDFC79;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /50DA2F8B;
+Reference = D3;
+ValeurCmp = LED_Rot;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /50DA3293;
+Reference = D4;
+ValeurCmp = LED_grün;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /50DA339B;
+Reference = D5;
+ValeurCmp = DIODE;
+IdModule  = D5;
+EndCmp
+
+BeginCmp
+TimeStamp = /50DB0CE9;
+Reference = D10;
+ValeurCmp = LED_weiss;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B250FF;
+Reference = IC1;
+ValeurCmp = ATMEGA644-P;
+IdModule  = DIP-40__600;
+EndCmp
+
+BeginCmp
+TimeStamp = /50BB8390;
+Reference = IC2;
+ValeurCmp = MPU-6050-DROTEK;
+IdModule  = MPU-6050-DROTEK;
+EndCmp
+
+BeginCmp
+TimeStamp = /50BA5649;
+Reference = M1;
+ValeurCmp = Motor;
+IdModule  = PIN_ARRAY-6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /50C30A6A;
+Reference = M2;
+ValeurCmp = Motor;
+IdModule  = PIN_ARRAY-6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /50C30A79;
+Reference = M3;
+ValeurCmp = Motor;
+IdModule  = PIN_ARRAY-6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /50BA5C4B;
+Reference = MD1;
+ValeurCmp = Motor_Driver;
+IdModule  = Motor_Driver_Pololu_706;
+EndCmp
+
+BeginCmp
+TimeStamp = /50C30A69;
+Reference = MD2;
+ValeurCmp = Motor_Driver;
+IdModule  = Motor_Driver_Pololu_706;
+EndCmp
+
+BeginCmp
+TimeStamp = /50C30A7A;
+Reference = MD3;
+ValeurCmp = Motor_Driver;
+IdModule  = Motor_Driver_Pololu_706;
+EndCmp
+
+BeginCmp
+TimeStamp = /50C30D75;
+Reference = P2;
+ValeurCmp = MotorController-Input;
+IdModule  = HE10_20D;
+EndCmp
+
+BeginCmp
+TimeStamp = /50CDF7E7;
+Reference = P3;
+ValeurCmp = MotorController-Input;
+IdModule  = HE10_20D;
+EndCmp
+
+BeginCmp
+TimeStamp = /50C31056;
+Reference = P4;
+ValeurCmp = MotorController-Power;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /50DA33B3;
+Reference = P5;
+ValeurCmp = MotorController-Power;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /50DB07CF;
+Reference = P6;
+ValeurCmp = IMU-Input;
+IdModule  = he10-6a;
+EndCmp
+
+BeginCmp
+TimeStamp = /50DB07F7;
+Reference = P7;
+ValeurCmp = IMU-Input;
+IdModule  = he10-6a;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B25329;
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /50BB6034;
+Reference = R2;
+ValeurCmp = 10K;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /50CDFC7D;
+Reference = R3;
+ValeurCmp = 4,7K;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /50CDFC84;
+Reference = R4;
+ValeurCmp = 2,2K;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /50DA31B1;
+Reference = R6;
+ValeurCmp = 1K;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /50DA3279;
+Reference = R7;
+ValeurCmp = 1K;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /50DB0D01;
+Reference = R11;
+ValeurCmp = 1K;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /50DA305D;
+Reference = RV1;
+ValeurCmp = 10K;
+IdModule  = RV2;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B25156;
+Reference = U1;
+ValeurCmp = 7805;
+IdModule  = TO220_VI_VO_GND;
+EndCmp
+
+BeginCmp
+TimeStamp = /50DA2F4E;
+Reference = U2;
+ValeurCmp = TL431LP;
+IdModule  = TO92;
+EndCmp
+
+BeginCmp
+TimeStamp = /50B25375;
+Reference = X1;
+ValeurCmp = CRYSTAL_OSSCI;
+IdModule  = DIP-14__300;
+EndCmp
+
+EndListe

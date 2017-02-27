@@ -1,0 +1,26 @@
+;------------------------------------------------------------------------------
+; default pattern (8x8 Bitmaps)
+
+Path: <..\BITMAPS\monochrome\Pattern>
+
+Pattern:  1  <pattern01.bmp>
+Pattern:  2  <pattern02.bmp>
+Pattern:  3  <pattern03.bmp>
+Pattern:  4  <pattern04.bmp>
+Pattern:  5  <pattern05.bmp>
+Pattern:  6  <pattern06.bmp>
+Pattern:  7  <pattern07.bmp>
+Pattern:  8  <pattern08.bmp>
+Pattern:  9  <pattern09.bmp>
+Pattern: 10  <pattern10.bmp>
+Pattern: 11  <pattern11.bmp>
+Pattern: 12  <pattern12.bmp>
+Pattern: 13  <pattern13.bmp>
+Pattern: 14  <pattern14.bmp>
+Pattern: 15  <pattern15.bmp>
+Pattern: 16  <pattern16.bmp>
+Pattern: 17  <pattern17.bmp>
+Pattern: 18  <pattern18.bmp>
+Pattern: 19  <pattern19.bmp>
+Pattern: 20  <pattern20.bmp>
+

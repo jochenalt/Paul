@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.2</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>{8f91d44c-4c58-48ec-b0f3-42a7b49a5532}</ProjectGuid>
+    <avrdevice>ATmega644PA</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>BallBotController</AssemblyName>
+    <Name>BalanceController</Name>
+    <RootNamespace>BallBotController</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <AsfVersion>2.11.1</AsfVersion>
+    <avrtool>
+    </avrtool>
+    <avrtoolinterface />
+    <com_atmel_avrdbg_tool_simulator>
+      <ToolType>com.atmel.avrdbg.tool.simulator</ToolType>
+      <ToolName>AVR Simulator</ToolName>
+      <ToolNumber>
+      </ToolNumber>
+      <Channel>
+        <host>127.0.0.1</host>
+        <port>61279</port>
+        <ssl>False</ssl>
+      </Channel>
+    </com_atmel_avrdbg_tool_simulator>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.6.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <preserveEEPROM>true</preserveEEPROM>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
+        <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+        <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+        <avrgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcccpp.linker.libraries.Libraries>
+      </AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=101</Value>
+      <Value>F_CPU=24000000UL</Value>
+      <Value>TWI_FREQ=400000</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../Arduino/core</Value>
+      <Value>../../../Arduino/variant</Value>
+      <Value>../../../Arduino/libraries/Wire/utility</Value>
+      <Value>..</Value>
+      <Value>../../Library</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=101</Value>
+      <Value>F_CPU=24000000UL</Value>
+      <Value>TWI_FREQ=400000</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../Arduino/core</Value>
+      <Value>../../../Arduino/variant</Value>
+      <Value>../../../Arduino/libraries/EEPROM</Value>
+      <Value>../../../Arduino/libraries/Wire</Value>
+      <Value>../../../Arduino/libraries/Wire/utility</Value>
+      <Value>../../Library</Value>
+      <Value>..</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.miscellaneous.OtherFlags>-felide-constructors -std=c++0x</avrgcccpp.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcccpp.linker.libraries.Libraries>
+  <avrgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>../../../Arduino/Debug</Value>
+    </ListValues>
+  </avrgcccpp.linker.libraries.LibrarySearchPaths>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Arduino\core\Arduino.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\Arduino.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\binary.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\binary.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\CDC.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\CDC.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\Client.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\Client.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\HardwareSerial.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\HardwareSerial.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\HardwareSerial.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\HardwareSerial.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\HID.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\HID.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\IPAddress.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\IPAddress.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\IPAddress.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\IPAddress.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\main.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\main.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\new.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\new.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\new.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\new.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\Platform.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\Platform.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\Print.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\Print.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\Print.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\Print.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\Printable.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\Printable.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\Server.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\Server.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\Stream.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\Stream.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\Stream.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\Stream.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\Tone.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\Tone.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\Udp.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\Udp.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\USBAPI.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\USBAPI.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\USBCore.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\USBCore.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\USBCore.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\USBCore.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\USBDesc.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\USBDesc.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\WCharacter.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\WCharacter.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\WInterrupts.c">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\WInterrupts.c</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\wiring.c">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\wiring.c</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\wiring_analog.c">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\wiring_analog.c</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\wiring_digital.c">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\wiring_digital.c</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\wiring_private.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\wiring_private.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\wiring_pulse.c">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\wiring_pulse.c</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\wiring_shift.c">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\wiring_shift.c</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\WMath.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\WMath.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\WString.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\WString.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\core\WString.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\core\WString.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\libraries\EEPROM\EEPROM.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\libraries\EEPROM.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\libraries\EEPROM\EEPROM.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\libraries\EEPROM.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\libraries\Wire\utility\twi.c">
+      <SubType>compile</SubType>
+      <Link>Arduino\libraries\twi.c</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\libraries\Wire\utility\twi.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\libraries\twi.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\libraries\Wire\Wire.cpp">
+      <SubType>compile</SubType>
+      <Link>Arduino\libraries\Wire.cpp</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\libraries\Wire\Wire.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\libraries\Wire.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\variant\pins_arduino.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\variants\pins_arduino.h</Link>
+    </Compile>
+    <Compile Include="..\..\Arduino\variant\pins_arduino_atmega644.h">
+      <SubType>compile</SubType>
+      <Link>Arduino\variants\pins_arduino_atmega644.h</Link>
+    </Compile>
+    <Compile Include="..\Library\FixedPoint.cpp">
+      <SubType>compile</SubType>
+      <Link>FixedPoint.cpp</Link>
+    </Compile>
+    <Compile Include="..\Library\FixedPoint.h">
+      <SubType>compile</SubType>
+      <Link>FixedPoint.h</Link>
+    </Compile>
+    <Compile Include="..\Library\LinkMainBot.cpp">
+      <SubType>compile</SubType>
+      <Link>LinkMainBot.cpp</Link>
+    </Compile>
+    <Compile Include="..\Library\LinkMainBot.h">
+      <SubType>compile</SubType>
+      <Link>LinkMainBot.h</Link>
+    </Compile>
+    <Compile Include="..\Library\MemoryBase.cpp">
+      <SubType>compile</SubType>
+      <Link>MemoryBase.cpp</Link>
+    </Compile>
+    <Compile Include="..\Library\MemoryBase.h">
+      <SubType>compile</SubType>
+      <Link>MemoryBase.h</Link>
+    </Compile>
+    <Compile Include="..\Library\MsgType.cpp">
+      <SubType>compile</SubType>
+      <Link>MsgType.cpp</Link>
+    </Compile>
+    <Compile Include="..\Library\MsgType.h">
+      <SubType>compile</SubType>
+      <Link>MsgType.h</Link>
+    </Compile>
+    <Compile Include="..\Library\Paul.h">
+      <SubType>compile</SubType>
+      <Link>Paul.h</Link>
+    </Compile>
+    <Compile Include="..\Library\TimePassedBy.h">
+      <SubType>compile</SubType>
+      <Link>TimePassedBy.h</Link>
+    </Compile>
+    <Compile Include="BallBotMemory.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="BallBotMemory.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="BotController.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="BotController.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="IMU\I2Cdev.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="IMU\I2Cdev.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="IMU\IMUController.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="IMU\IMUController.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="IMU\Kalman.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="IMU\MPU6050.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="IMU\MPU6050.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Kinematics.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Kinematics.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="main.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Motor.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MotorController.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Motor.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MotorController.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="PCInt.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="setup.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Arduino\core" />
+    <Folder Include="Arduino\libraries" />
+    <Folder Include="Arduino\variants" />
+    <Folder Include="IMU" />
+    <Folder Include="Arduino" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

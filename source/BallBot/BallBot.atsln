@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "BalanceController", "BallBotController\BalanceController.cppproj", "{8F91D44C-4C58-48EC-B0F3-42A7B49A5532}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "RemoteControl", "RemoteControl\RemoteControl.cppproj", "{14882C55-2BA0-4E2E-B231-DFEB31328267}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "MainController", "MainController\MainController.cppproj", "{2FBE62DC-A4B0-427E-9145-C671F6EAF0E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F91D44C-4C58-48EC-B0F3-42A7B49A5532}.Debug|AVR.ActiveCfg = Debug|AVR
+		{8F91D44C-4C58-48EC-B0F3-42A7B49A5532}.Debug|AVR.Build.0 = Debug|AVR
+		{8F91D44C-4C58-48EC-B0F3-42A7B49A5532}.Release|AVR.ActiveCfg = Release|AVR
+		{8F91D44C-4C58-48EC-B0F3-42A7B49A5532}.Release|AVR.Build.0 = Release|AVR
+		{14882C55-2BA0-4E2E-B231-DFEB31328267}.Debug|AVR.ActiveCfg = Debug|AVR
+		{14882C55-2BA0-4E2E-B231-DFEB31328267}.Debug|AVR.Build.0 = Debug|AVR
+		{14882C55-2BA0-4E2E-B231-DFEB31328267}.Release|AVR.ActiveCfg = Release|AVR
+		{14882C55-2BA0-4E2E-B231-DFEB31328267}.Release|AVR.Build.0 = Release|AVR
+		{2FBE62DC-A4B0-427E-9145-C671F6EAF0E3}.Debug|AVR.ActiveCfg = Debug|AVR
+		{2FBE62DC-A4B0-427E-9145-C671F6EAF0E3}.Debug|AVR.Build.0 = Debug|AVR
+		{2FBE62DC-A4B0-427E-9145-C671F6EAF0E3}.Release|AVR.ActiveCfg = Release|AVR
+		{2FBE62DC-A4B0-427E-9145-C671F6EAF0E3}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

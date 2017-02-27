@@ -1,0 +1,4 @@
+Channel 12
+PAN ID 2481
+BAUD 576000
+Firmware 10ED

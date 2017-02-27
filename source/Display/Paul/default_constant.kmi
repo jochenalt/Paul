@@ -1,0 +1,107 @@
+;------------------------------------------------------------------------------
+; define charactercodes for strings
+
+CodeTable: 1        ; use codetable 1 for standard *.FXT fonts with DOS-Code
+'Ä' = 128
+'‰ˆ¸ƒ÷‹ﬂ' = $84,$94,$81, $8E,$99,$9A, $E1
+
+;------------------------------------------------------------------------------
+; define constants
+
+XPIXEL = 320
+YPIXEL = 240
+XMAX   = XPIXEL - 1
+YMAX   = YPIXEL - 1
+
+ESC = 27
+CR  = 13
+LF  = 10
+FF  = 12
+
+W0   = 0
+W90  = 1
+W180 = 2
+W270 = 3
+
+;------------------------------------------------------------------------------
+; color constants
+
+TRANSPARENT = 0
+BLACK       =  1	; RGB:   0   0   0
+BLUE        =  2	; RGB:   0   0 255
+RED         =  3	; RGB: 255   0   0
+GREEN       =  4	; RGB:   0 255   0
+MAGENTA     =  5	; RGB: 255   0 255
+CYAN        =  6	; RGB:   0 255 255
+YELLOW      =  7	; RGB: 255 255   0
+WHITE       =  8	; RGB: 255 255 255
+DARKGREY    =  9	; RGB: 111 111 111
+ORANGE      = 10	; RGB: 255 143   0
+PURPLE      = 11	; RGB: 143   0 255
+DEEPPINK    = 12	; RGB: 255   0 143
+MINT        = 13	; RGB:   0 255 143
+LAWNGREEN   = 14; RGB: 143 255   0
+SKYBLUE     = 15	; RGB:   0 143 255
+GREY        = 16	; RGB: 175 175 175
+NOCHANGE    = 255
+
+;------------------------------------------------------------------------------
+; constants for animations
+
+NONE         = 0
+ONCE         = 1
+CYCLIC       = 2
+PINGPONG     = 3
+ONCEBACK     = 4
+CYCLICBACK   = 5
+PINGPONGBACK = 6
+TOFRAME      = 7
+DEFAULTTIME  = 255
+
+;-------------------------------------------------------------------------------
+; constants for bit macros
+
+P1_LO = 1
+P2_LO = 2
+P3_LO = 3
+P4_LO = 4
+P5_LO = 5
+P6_LO = 6
+P7_LO = 7
+P8_LO = 8
+
+P1_HI = 1+8
+P2_HI = 2+8
+P3_HI = 3+8
+P4_HI = 4+8
+P5_HI = 5+8
+P6_HI = 6+8
+P7_HI = 7+8
+P8_HI = 8+8
+
+;-------------------------------------------------------------------------------
+; constants for analogue macros
+
+AIN1_CHANGE     = 0
+AIN1_DEC        = 1
+AIN1_INC        = 2
+AIN1_LOWER1     = 3
+AIN1_HIGHER1    = 4
+AIN1_LOWER2     = 5
+AIN1_HIGHER2    = 6
+AIN1_OUTWINDOW  = 7
+AIN1_INWINDOW   = 8
+AIN1_LOWER_AIN2 = 9
+
+AIN2_CHANGE     = 10
+AIN2_DEC        = 11
+AIN2_INC        = 12
+AIN2_LOWER1     = 13
+AIN2_HIGHER1    = 14
+AIN2_LOWER2     = 15
+AIN2_HIGHER2    = 16
+AIN2_OUTWINDOW  = 17
+AIN2_INWINDOW   = 18
+AIN2_LOWER_AIN1 = 19
+
+

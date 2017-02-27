@@ -1,0 +1,213 @@
+eDIPTFT32-A "Paul" ; Projectname" max. 32 character
+
+AutoScan: 1 			; autoscan for correct baud rate to connect to eDIP on COM/USB
+COM11: 115200			; program eDIP on COMx with 115200 Baud
+;USB: 115200, "eDIP Programmer"	; use EA 9777-USB eDIP Programmer and program eDIP with 230400 baud
+
+;VERIFY				; verify after program
+
+
+include <default_constant.kmi>
+;------------------------------------------------------------------------------
+; default fonts
+
+LogFontWidth:   0; no logging of font width
+ExportWinFont:  1 ; no export of fst file
+ExportOverview: 1; export bmp files per font
+
+FONT4x6   = 1
+FONT6x8   = 2
+GENEVA10  = 3
+GENEVA12 = 4
+GENEVA13  =5
+GENEVA15  = 6
+SEGOE15 = 7
+SEGOE18 = 8
+SEGOE20 = 9
+SEGOE22 = 10
+SEGOE24 = 11
+SEGOE36 = 12
+SEGOE48 = 13
+
+
+Path: <..\Fonts>
+Font: FONT4x6,   <4x6.FXT>
+Font: FONT6x8,   <6x8.FXT>
+Font: GENEVA10,  <GENEVA10.FXT>
+Font: GENEVA12,  <GENEVA12.FXT>
+Font: GENEVA13,  <GENEVA13.FXT>
+Font: GENEVA15,  <GENEVA15.FXT>
+
+
+WinFont SEGOE15, "Segoe UI Symbol",0,0, 32-255, 15 ; double click to open (on Fontname) 
+WinFont SEGOE18, "Segoe UI Light",0,0, 32-255, 18; double click to open (on Fontname) 
+WinFont SEGOE20, "Segoe UI Light",0,0, 32-255, 20 ; double click to open (on Fontname) 
+WinFont SEGOE22, "Segoe UI Light",0,0, 32-255, 22 ; double click to open (on Fontname) 
+WinFont SEGOE24, "Segoe UI Light",0,0, 32-127, 24 ; double click to open (on Fontname) 
+WinFont SEGOE36, "Segoe UI Light",0,0, 32-127, 36 ; double click to open (on Fontname) 
+WinFont SEGOE48, "Segoe UI Light",0,0, 32-127, 48 ; double click to open (on Fontname) 
+
+
+;-------------------------------------------------------------------------------
+; SPLASH
+;-------------------------------------------------------------------------------
+Path: <C:\Daten\Projects\Balancing Ball Robot\source\Display\Paul\Splash>
+
+;-------------------------------------------------------------------------------
+; Paul in different theme colors
+;-------------------------------------------------------------------------------
+Picture 1[1], <Paul-0.png>			; double click to open
+Picture 2[1], <Paul-0-Right-tilt.png>		; double click to open
+Picture 3[1], <Paul-0-Left-tilt.png>		; double click to open
+Picture 4[1], <Paul-0-left-half-tilt.png>	; double click to open
+Picture 5[1], <Paul-0-right-half-tilt.png>	; double click to open
+
+Picture 1[2], <Paul-1.png>			; double click to open
+Picture 2[2], <Paul-1-Right-tilt.png>		; double click to open
+Picture 3[2], <Paul-1-Left-tilt.png>		; double click to open
+Picture 4[2], <Paul-1-left-half-tilt.png>	; double click to open
+Picture 5[2], <Paul-1-right-half-tilt.png>	; double click to open
+
+Picture 1[3], <Paul-2.png>			; double click to open
+Picture 2[3], <Paul-2-Right-tilt.png>		; double click to open
+Picture 3[3], <Paul-2-Left-tilt.png>		; double click to open
+Picture 4[3], <Paul-2-left-half-tilt.png>	; double click to open
+Picture 5[3], <Paul-2-right-half-tilt.png>	; double click to open
+
+
+Picture 1[4], <Paul-3.png>			; double click to open
+Picture 2[4], <Paul-3-Right-tilt.png>		; double click to open
+Picture 3[4], <Paul-3-Left-tilt.png>		; double click to open
+Picture 4[4], <Paul-3-left-half-tilt.png>	; double click to open
+Picture 5[4], <Paul-3-right-half-tilt.png>	; double click to open
+
+Picture 1[5], <Paul-4.png>			; double click to open
+Picture 2[5], <Paul-4-Right-tilt.png>		; double click to open
+Picture 3[5], <Paul-4-Left-tilt.png>		; double click to open
+Picture 4[5], <Paul-4-left-half-tilt.png>	; double click to open
+Picture 5[5], <Paul-4-right-half-tilt.png>	; double click to open
+
+Picture 1[6], <Paul-5.png>			; double click to open
+Picture 2[6], <Paul-5-Right-tilt.png>		; double click to open
+Picture 3[6], <Paul-5-Left-tilt.png>		; double click to open
+Picture 4[6], <Paul-5-left-half-tilt.png>	; double click to open
+Picture 5[6], <Paul-5-right-half-tilt.png>	; double click to open
+
+;-------------------------------------------------------------------------------
+; EYES
+;-------------------------------------------------------------------------------
+Picture 4[0], <Eyes-Normal.png>	; double click to open
+Picture 5[0], <Eyes-Excited.png>	; double click to open
+Picture 6[0], <Eyes-Blink.png>	; double click to open
+Picture 7[0], <Eyes-half-Blink.png>	; double click to open
+Picture 8[0], <Eyes-left.png>	; double click to open
+Picture 9[0], <Eyes-Right.png>	; double click to open
+Picture 10[0], <Eyes-Sad.png>	; double click to open
+
+
+Path: <C:\Daten\Projects\Balancing Ball Robot\source\Display\Paul\MainScreen>
+Picture 11[1], <Paul-0-Background.png>	; double click to open
+Picture 12[1], <Paul-0-Head.png>		; double click to open
+Picture 11[2], <Paul-1-Background.png>	; double click to open
+Picture 12[2], <Paul-1-Head.png>		; double click to open
+
+Picture 11[3], <Paul-2-Background.png>	; double click to open
+Picture 12[3], <Paul-2-Head.png>		; double click to open
+
+Picture 11[4], <Paul-3-Background.png>	; double click to open
+Picture 12[4], <Paul-3-Head.png>		; double click to open
+
+Picture 11[5], <Paul-4-Background.png>	; double click to open
+Picture 12[5], <Paul-4-Head.png>		; double click to open
+
+Picture 11[6], <Paul-5-Background.png>	; double click to open
+Picture 12[6], <Paul-5-Head.png>		; double click to open
+
+
+
+
+Path: <C:\Daten\Projects\Balancing Ball Robot\source\Display\Paul\>
+Picture 13[0], <Arrow-down.png>	; double click to open
+Picture 14[0], <Arrow-up.png>	; double click to open
+Picture 15[0], <Arrow-right.png>	; double click to open
+Picture 16[0], <Arrow-left.png>	; double click to open
+Picture 17[0], <Loudspeaker.png>	; double click to open
+Picture 18[0], <Talk-Speed.png>	; double click to open
+Picture 19[0], <Sun.png>	; double click to open
+
+
+
+
+
+
+
+;-------------------------------------------------------------------------------
+; Main
+;-------------------------------------------------------------------------------
+;Path: <C:\Daten\Projects\Balancing Ball Robot\source\Display\Paul\MainScreen>
+
+;Picture 1[1], <Paul-0-0.png>	; double click to open
+;Picture 2[1], <Paul-1-0.png>	; double click to open;
+;Picture 3[1], <Paul-1-1.png>	; double click to open
+;Picture 4[1], <Paul-1-2.png>	; double click to open
+;Picture 5[1], <Paul-1-3.png>	; double click to open
+
+;Picture 6[1], <Paul-2-0.png>	; double click to open
+;Picture 7[1], <Paul-2-1.png>	; double click to open
+;Picture 8[1], <Paul-2-2.png>	; double click to open
+;Picture 9[1], <Paul-2-3.png>	; double click to open
+
+;Picture 1[2], <Paul-3-0.png>	; double click to open
+;Picture 2[2], <Paul-3-1.png>	; double click to open
+;Picture 3[2], <Paul-3-2.png>	; double click to open
+;Picture 4[2], <Paul-3-3.png>	; double click to open
+;Picture 5[2], <Paul-3-0.png>	; double click to open
+;Picture 6[2], <Paul-3-1.png>	; double click to open
+;Picture 7[2], <Paul-3-2.png>	; double click to open
+;Picture 8[2], <Paul-3-3.png>	; double click to open
+
+;Picture 1[3], <Paul-4-0.png>	; double click to open
+;Picture 2[3], <Paul-4-1.png>	; double click to open
+;Picture 3[3], <Paul-4-2.png>	; double click to open
+;Picture 4[3], <Paul-4-3.png>	; double click to open
+;Picture 5[3], <Paul-4-0.png>	; double click to open
+;Picture 6[3], <Paul-4-1.png>	; double click to open
+;Picture 7[3], <Paul-4-2.png>	; double click to open
+;Picture 8[3], <Paul-4-3.png>	; double click to open
+
+
+
+
+MnPowerOn = 0
+
+PowerOnMakro:; wird nach dem Einschalten ausgeführt
+#MN MnPowerOn
+
+ResetMakro:; wird nach einem externen Reset ausgeführt
+#MN MnPowerOn
+
+WatchdogMakro:; wird nach einem Fehlerfall/Timeout >500ms ausgeführt
+#MN MnPowerOn
+
+BrownOutMakro:; wird nach einem Spannungseinbruch <3V ausgeführt
+#MN MnPowerOn
+
+;-------------------------------------------------------------------------------
+Makro: MnPowerOn
+
+;-------------------------------------------------------------------------------
+; predefined colors for Paul
+;-------------------------------------------------------------------------------
+; FP no, R5, G6, B5
+#FP 17, 32,60,30
+#FP 18, 10,53,31
+#FP 19, 2,4,27
+#FP 20, 19,63,19
+
+
+;-------------------------------------------------------------------------------
+; left bottom corner "It's just me, Paul
+;-------------------------------------------------------------------------------
+#TC 0;  cursor invisible
+#ZF 6; set font No 10
+#ZC 1,220,"It's just me, Paul."

@@ -1,0 +1,55 @@
+;------------------------------------------------------------------------------
+; default border (24x24 Bitmaps)
+
+Path: <..\BITMAPS\color\border>
+
+Border:  1   <border01.bmp>
+Border:  2   <border02.bmp>
+Border:  3   <border03.bmp>
+Border:  4   <border04.bmp>
+Border:  5   <border05.bmp>
+Border:  6   <border06.bmp>
+Border:  7   <border07.bmp>
+Border:  8   <border08.bmp>
+Border:  9   <border09.bmp>
+Border: 10   <border10.bmp>
+Border: 11   <border11.bmp>
+Border: 12   <border12.bmp>
+Border: 13   <border13.bmp>
+Border: 14   <border14.bmp>
+Border: 15   <border15.bmp>
+Border: 16   <border16.bmp>
+Border: 17   <border17.bmp>
+Border: 18   <border18.bmp>
+Border: 19   <border19.bmp>
+Border: 20   <border20.bmp>
+
+Border: 31   <Register_Normal.bmp>,<Register_Selected.bmp>
+Border: 32   <3Dgrey_Normal.bmp>,<3Dgrey_Selected.bmp>
+
+;------------------------------------------------------------------------------
+; default bars (24x24 Bitmaps)
+
+Border: 101	<Bar3Dgrey.G16>
+Border: 102	<Bar3Dblue.G16>
+Border: 103	<Bar3Dred.G16>
+Border: 104	<Bar3Dgreen.G16>
+Border: 105	<Bar3Dmagenta.G16>
+Border: 106	<Bar3Dcyan.G16>
+Border: 107	<Bar3Dyellow.G16>
+
+Border: 111	<BarRoundGrey.G16>
+Border: 112	<BarRoundBlue.G16>
+Border: 113	<BarRoundRed.G16>
+Border: 114	<BarRoundGreen.G16>
+Border: 115	<BarRoundMagenta.G16>
+Border: 116	<BarRoundCyan.G16>
+Border: 117	<BarRoundYellow.G16>
+
+Border: 121	<BarArrowGrey.G16>
+Border: 122	<BarArrowBlue.G16>
+Border: 123	<BarArrowRed.G16>
+Border: 124	<BarArrowGreen.G16>
+Border: 125	<BarArrowMagenta.G16>
+Border: 126	<BarArrowCyan.G16>
+Border: 127	<BarArrowYellow.G16>

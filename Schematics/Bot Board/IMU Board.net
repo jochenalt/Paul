@@ -1,0 +1,638 @@
+# EESchema Netlist Version 1.1 created  26.12.2012 18:42:28
+(
+ ( /50DB35C6 $noname  K1 ELV-UM2102 {Lib=ELV-UM2102}
+  (    1 GND )
+  (    2 N-000051 )
+  (    3 N-000021 )
+ )
+ ( /50DB0D01 $noname  R11 1K {Lib=R}
+  (    1 N-000022 )
+  (    2 N-000018 )
+ )
+ ( /50DB0CE9 $noname  D10 LED_weiss {Lib=LED}
+  (    1 /5V )
+  (    2 N-000018 )
+ )
+ ( /50DB0938 $noname  C10 100nF {Lib=C}
+  (    1 N-000022 )
+  (    2 /5V )
+ )
+ ( /50DB07F7 $noname  P7 IMU-Input {Lib=CONN_6}
+  (    1 N-000022 )
+  (    2 /5V )
+  (    3 ? )
+  (    4 N-000023 )
+  (    5 N-000053 )
+  (    6 N-000052 )
+ )
+ ( /50DB07CF $noname  P6 IMU-Input {Lib=CONN_6}
+  (    1 N-000022 )
+  (    2 /5V )
+  (    3 ? )
+  (    4 N-000023 )
+  (    5 N-000053 )
+  (    6 N-000052 )
+ )
+ ( /50BB8390 $noname  IC2 MPU-6050-DROTEK {Lib=MPU-6050-DROTEK}
+  (    1 /5V )
+  (    2 N-000022 )
+  (    3 ? )
+  (    4 N-000023 )
+  (    5 N-000053 )
+  (    6 N-000052 )
+  (    7 ? )
+  (    8 ? )
+ )
+ ( /50DA33B3 $noname  P5 MotorController-Power {Lib=CONN_2}
+  (    1 +12V )
+  (    2 GND )
+ )
+ ( /50DA339B $noname  D5 DIODE {Lib=DIODE}
+  (    1 /5V )
+  (    2 +12V )
+ )
+ ( /50DA3293 $noname  D4 LED_grün {Lib=LED}
+  (    1 N-000024 )
+  (    2 GND )
+ )
+ ( /50DA3279 $noname  R7 1K {Lib=R}
+  (    1 +12V )
+  (    2 N-000024 )
+ )
+ ( /50DA31B1 $noname  R6 1K {Lib=R}
+  (    1 +12V )
+  (    2 N-000026 )
+ )
+ ( /50DA305D $noname  RV1 10K {Lib=POT}
+  (    1 +12V )
+  (    2 N-000025 )
+  (    3 GND )
+ )
+ ( /50DA2F8B $noname  D3 LED_Rot {Lib=LED}
+  (    1 N-000026 )
+  (    2 GND )
+ )
+ ( /50DA2F4E $noname  U2 TL431LP {Lib=TL431LP}
+  (    1 GND )
+  (    2 N-000025 )
+  (    3 N-000026 )
+ )
+ ( /50CDFC84 $noname  R4 2,2K {Lib=R}
+  (    1 N-000004 )
+  (    2 N-000080 )
+ )
+ ( /50CDFC7D $noname  R3 4,7K {Lib=R}
+  (    1 N-000003 )
+  (    2 N-000077 )
+ )
+ ( /50CDFC79 $noname  D2 LED {Lib=LED}
+  (    1 N-000004 )
+  (    2 N-000003 )
+ )
+ ( /50CDF7E7 $noname  P3 MotorController-Input {Lib=CONN_20}
+  (    1 GND )
+  (    2 /5V )
+  (    3 /INb3 )
+  (    4 /EnA3 )
+  (    5 /PWM3 )
+  (    6 /EnB3 )
+  (    7 /INa3 )
+  (    8 ? )
+  (    9 /INb2 )
+  (   10 /EnA2 )
+  (   11 /PWM2 )
+  (   12 /EnB2 )
+  (   13 /INa2 )
+  (   14 ? )
+  (   15 /INb1 )
+  (   16 ? )
+  (   17 /PWM1 )
+  (   18 /EnA1 )
+  (   19 /Ina1 )
+  (   20 /EnB1 )
+ )
+ ( /50C30D75 $noname  P2 MotorController-Input {Lib=CONN_20}
+  (    1 GND )
+  (    2 /5V )
+  (    3 /INb3 )
+  (    4 /EnA3 )
+  (    5 /PWM3 )
+  (    6 /EnB3 )
+  (    7 /INa3 )
+  (    8 ? )
+  (    9 /INb2 )
+  (   10 /EnA2 )
+  (   11 /PWM2 )
+  (   12 /EnB2 )
+  (   13 /INa2 )
+  (   14 ? )
+  (   15 /INb1 )
+  (   16 ? )
+  (   17 /PWM1 )
+  (   18 /EnA1 )
+  (   19 /Ina1 )
+  (   20 /EnB1 )
+ )
+ ( /50C31056 $noname  P4 MotorController-Power {Lib=CONN_2}
+  (    1 N-000080 )
+  (    2 N-000077 )
+ )
+ ( /50C30A7A $noname  MD3 Motor_Driver {Lib=POLULU_MOTOR_DRIVER}
+  (    1 /INa3 )
+  (    2 ? )
+  (    3 /PWM3 )
+  (    4 ? )
+  (    5 ? )
+  (    6 /INb3 )
+  (    7 /5V )
+  (    8 GND )
+  (    9 N-000080 )
+  (   10 N-000077 )
+  (   11 N-000060 )
+  (   12 N-000059 )
+ )
+ ( /50C30A79 $noname  M3 Motor {Lib=POLULU_MOTOR_CONN}
+  (    1 N-000059 )
+  (    2 N-000060 )
+  (    3 GND )
+  (    4 /5V )
+  (    5 /EnA3 )
+  (    6 /EnB3 )
+ )
+ ( /50C30A6A $noname  M2 Motor {Lib=POLULU_MOTOR_CONN}
+  (    1 /red )
+  (    2 N-000072 )
+  (    3 GND )
+  (    4 /5V )
+  (    5 /EnA2 )
+  (    6 /EnB2 )
+ )
+ ( /50C30A69 $noname  MD2 Motor_Driver {Lib=POLULU_MOTOR_DRIVER}
+  (    1 /INa2 )
+  (    2 ? )
+  (    3 /PWM2 )
+  (    4 ? )
+  (    5 ? )
+  (    6 /INb2 )
+  (    7 /5V )
+  (    8 GND )
+  (    9 N-000080 )
+  (   10 N-000077 )
+  (   11 N-000072 )
+  (   12 /red )
+ )
+ ( /50BB6034 $noname  R2 10K {Lib=R}
+  (    1 /5V )
+  (    2 N-000074 )
+ )
+ ( /50BB601F $noname  D1 LED {Lib=LED}
+  (    1 N-000056 )
+  (    2 N-000074 )
+ )
+ ( /50BA5C4B $noname  MD1 Motor_Driver {Lib=POLULU_MOTOR_DRIVER}
+  (    1 /Ina1 )
+  (    2 ? )
+  (    3 /PWM1 )
+  (    4 ? )
+  (    5 ? )
+  (    6 /INb1 )
+  (    7 /5V )
+  (    8 GND )
+  (    9 N-000080 )
+  (   10 N-000077 )
+  (   11 N-000067 )
+  (   12 /red )
+ )
+ ( /50BA5649 $noname  M1 Motor {Lib=POLULU_MOTOR_CONN}
+  (    1 /red )
+  (    2 N-000067 )
+  (    3 GND )
+  (    4 /5V )
+  (    5 /EnA1 )
+  (    6 /EnB1 )
+ )
+ ( /50B25375 $noname  X1 CRYSTAL_OSSCI {Lib=CRYSTAL_OSSCI}
+  (    7 GND )
+  (    8 N-000035 )
+  (   14 /5V )
+ )
+ ( /50B25329 $noname  R1 10K {Lib=R}
+  (    1 /5V )
+  (    2 N-000054 )
+ )
+ ( /50B251F0 $noname  C4 470uF {Lib=CPOL}
+  (    1 /5V )
+  (    2 GND )
+ )
+ ( /50B25185 $noname  C3 100nF {Lib=C}
+  (    1 /5V )
+  (    2 GND )
+ )
+ ( /50B25175 $noname  C2 100nF {Lib=C}
+  (    1 +12V )
+  (    2 GND )
+ )
+ ( /50B25162 $noname  C1 100uF {Lib=CPOL}
+  (    1 +12V )
+  (    2 GND )
+ )
+ ( /50B25156 $noname  U1 7805 {Lib=7805}
+  (  GND GND )
+  (   VI +12V )
+  (   VO /5V )
+ )
+ ( /50B250FF DIL40  IC1 ATMEGA644-P {Lib=ATMEGA644-P}
+  (    1 /EnA2 )
+  (    2 /EnB2 )
+  (    3 ? )
+  (    4 /PWM1 )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+  (    9 N-000054 )
+  (   10 /5V )
+  (   11 GND )
+  (   12 ? )
+  (   13 N-000035 )
+  (   14 N-000021 )
+  (   15 N-000051 )
+  (   16 N-000052 )
+  (   17 ? )
+  (   18 ? )
+  (   19 /PWM2 )
+  (   20 /PWM3 )
+  (   21 N-000056 )
+  (   22 N-000023 )
+  (   23 N-000053 )
+  (   24 ? )
+  (   25 ? )
+  (   26 ? )
+  (   27 ? )
+  (   28 /EnA3 )
+  (   29 /EnB3 )
+  (   30 /5V )
+  (   31 GND )
+  (   32 /5V )
+  (   33 /INb3 )
+  (   34 /INa3 )
+  (   35 /INb2 )
+  (   36 /INa2 )
+  (   37 /INb1 )
+  (   38 /Ina1 )
+  (   39 /EnB1 )
+  (   40 /EnA1 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R11
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D10
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component C10
+ SM*
+ C?
+ C1-1
+$endlist
+$component D5
+ D?
+ S*
+$endlist
+$component D4
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D3
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component IC1
+ 40DIP-ELL600
+ 40dip600
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 3 "" ""
+ D2 2
+ R3 1
+Net 4 "" ""
+ D2 1
+ R4 1
+Net 7 "/Ina1" "Ina1"
+ P3 19
+ P2 19
+ IC1 38
+ MD1 1
+Net 8 "/PWM2" "PWM2"
+ MD2 3
+ P3 11
+ P2 11
+ IC1 19
+Net 10 "/INb1" "INb1"
+ MD1 6
+ P3 15
+ IC1 37
+ P2 15
+Net 12 "/PWM1" "PWM1"
+ P2 17
+ IC1 4
+ MD1 3
+ P3 17
+Net 15 "/EnA3" "EnA3"
+ IC1 28
+ P3 4
+ M3 5
+ P2 4
+Net 16 "/EnB3" "EnB3"
+ M3 6
+ P2 6
+ IC1 29
+ P3 6
+Net 17 "/INa3" "INa3"
+ P3 7
+ MD3 1
+ IC1 34
+ P2 7
+Net 18 "" ""
+ D10 2
+ R11 2
+Net 21 "" ""
+ K1 3
+ IC1 14
+Net 22 "" ""
+ IC2 2
+ R11 1
+ P6 1
+ C10 1
+ P7 1
+Net 23 "" ""
+ IC1 22
+ P7 4
+ P6 4
+ IC2 4
+Net 24 "" ""
+ D4 1
+ R7 2
+Net 25 "" ""
+ U2 2
+ RV1 2
+Net 26 "" ""
+ D3 1
+ R6 2
+ U2 3
+Net 35 "" ""
+ IC1 13
+ X1 8
+Net 36 "+12V" "+12V"
+ R6 1
+ D5 2
+ P5 1
+ U1 VI
+ C1 1
+ RV1 1
+ C2 1
+ R7 1
+Net 37 "/EnA2" "EnA2"
+ P2 10
+ P3 10
+ IC1 1
+ M2 5
+Net 39 "/EnB1" "EnB1"
+ M1 6
+ IC1 39
+ P3 20
+ P2 20
+Net 42 "/EnB2" "EnB2"
+ M2 6
+ P3 12
+ P2 12
+ IC1 2
+Net 51 "" ""
+ IC1 15
+ K1 2
+Net 52 "" ""
+ P7 6
+ IC1 16
+ IC2 6
+ P6 6
+Net 53 "" ""
+ IC1 23
+ IC2 5
+ P6 5
+ P7 5
+Net 54 "" ""
+ IC1 9
+ R1 2
+Net 55 "/PWM3" "PWM3"
+ P3 5
+ P2 5
+ IC1 20
+ MD3 3
+Net 56 "" ""
+ IC1 21
+ D1 1
+Net 59 "" ""
+ MD3 12
+ M3 1
+Net 60 "" ""
+ MD3 11
+ M3 2
+Net 61 "/5V" "5V"
+ IC1 32
+ IC2 1
+ X1 14
+ R1 1
+ C4 1
+ C3 1
+ U1 VO
+ M1 4
+ IC1 30
+ IC1 10
+ MD3 7
+ P2 2
+ P7 2
+ D10 1
+ C10 2
+ P6 2
+ D5 1
+ M3 4
+ P3 2
+ R2 1
+ MD2 7
+ MD1 7
+ M2 4
+Net 67 "" ""
+ M1 2
+ MD1 11
+Net 68 "/INa2" "INa2"
+ IC1 36
+ P3 13
+ P2 13
+ MD2 1
+Net 72 "" ""
+ MD2 11
+ M2 2
+Net 73 "/red" "red"
+ MD2 12
+ M1 1
+ MD1 12
+ M2 1
+Net 74 "" ""
+ R2 2
+ D1 2
+Net 75 "/INb3" "INb3"
+ P2 3
+ MD3 6
+ IC1 33
+ P3 3
+Net 77 "" ""
+ MD1 10
+ P4 2
+ MD2 10
+ R3 2
+ MD3 10
+Net 78 "/EnA1" "EnA1"
+ P3 18
+ M1 5
+ P2 18
+ IC1 40
+Net 79 "/INb2" "INb2"
+ MD2 6
+ IC1 35
+ P2 9
+ P3 9
+Net 80 "" ""
+ MD1 9
+ P4 1
+ R4 2
+ MD2 9
+ MD3 9
+Net 81 "GND" "GND"
+ X1 7
+ C3 2
+ C4 2
+ C2 2
+ P3 1
+ P2 1
+ K1 1
+ D4 2
+ U2 1
+ P5 2
+ RV1 3
+ D3 2
+ C1 2
+ U1 GND
+ M1 3
+ IC1 11
+ IC1 31
+ MD3 8
+ M3 3
+ M2 3
+ MD1 8
+ MD2 8
+}
+#End

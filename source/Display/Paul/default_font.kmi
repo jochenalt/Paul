@@ -1,0 +1,30 @@
+;------------------------------------------------------------------------------
+; default fonts
+
+FONT4x6   = 1
+FONT6x8   = 2
+GENEVA10  = 3
+
+LogFontWidth:   0; no logging of font width
+ExportWinFont:  0 ; no export of fst file
+ExportOverview: 1; export bmp files per font
+
+
+
+Path: <..\Fonts>
+
+Font: FONT4x6,   <4x6.FXT>
+Font: FONT6x8,   <6x8.FXT>
+Font: GENEVA10,  <GENEVA10.FXT>
+;------------------------------------------------------------------------------
+; import TTF fonts
+
+
+WinFont 4, "Segoe UI Symbol",0,0, 32-127, 11 ; double click to open (on Fontname) 
+WinFont 5, "Segoe UI Symbol",0,0, 32-127, 12 ; double click to open (on Fontname) 
+WinFont 6, "Segoe UI Symbol",0,0, 32-127, 13 ; double click to open (on Fontname) 
+WinFont 7, "Segoe UI Symbol",0,0, 32-127, 15 ; double click to open (on Fontname) 
+WinFont 8, "Segoe UI Symbol",0,0, 32-127, 20 ; double click to open (on Fontname) 
+WinFont 9, "Segoe UI Symbol",0,0, 32-127, 22 ; double click to open (on Fontname) 
+WinFont 10, "Segoe UI Symbol",0,0, 32-127, 24 ; double click to open (on Fontname) 
+WinFont 11, "Segoe UI Symbol",0,0, 32-127, 26 ; double click to open (on Fontname) 

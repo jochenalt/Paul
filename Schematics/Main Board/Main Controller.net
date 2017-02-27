@@ -1,0 +1,540 @@
+# EESchema Netlist Version 1.1 created  10.03.2013 00:14:50
+(
+ ( /50BB601F $noname  D1 LED_weiss {Lib=LED}
+  (    1 N-000050 )
+  (    2 GND )
+ )
+ ( /513A22B7 $noname  P4 Panel {Lib=CONN_5}
+  (    1 /M_V+ )
+  (    2 +12V )
+  (    3 /Bot_V+ )
+  (    4 /B-SW+ )
+  (    5 GND )
+ )
+ ( /513A21B5 $noname  K1 LED_BUS {Lib=CONN_5}
+  (    1 /Bot_V+ )
+  (    2 /SDA )
+  (    3 /SCL )
+  (    4 GND )
+  (    5 GND )
+ )
+ ( /51365CCC $noname  P22 LED_Phalanx {Lib=CONN_6}
+  (    1 GND )
+  (    2 /PLED )
+  (    3 /ELED )
+  (    4 /MLED )
+  (    5 /BLED )
+  (    6 /DLED )
+ )
+ ( /5134E9F7 $noname  P1 Motor_Power {Lib=CONN_2}
+  (    1 /M_V+ )
+  (    2 GND )
+ )
+ ( /5134509E $noname  R23 2.2K {Lib=R}
+  (    1 /MLED )
+  (    2 /M_V+ )
+ )
+ ( /51337E95 $noname  R21 10K {Lib=R}
+  (    1 +5V )
+  (    2 /SDA )
+ )
+ ( /51337E74 $noname  R22 10K {Lib=R}
+  (    1 +5V )
+  (    2 /SCL )
+ )
+ ( /50E2D4A0 $noname  R14 1K {Lib=R}
+  (    1 +5V )
+  (    2 /PLED )
+ )
+ ( /50E209E6 $noname  D6 DIODE {Lib=DIODE}
+  (    1 /RST )
+  (    2 +5V )
+ )
+ ( /51323A32 $noname  R18 1K {Lib=R}
+  (    1 N-000033 )
+  (    2 /IsTalking )
+ )
+ ( /51323438 $noname  R19 1K {Lib=R}
+  (    1 /ELED )
+  (    2 N-000034 )
+ )
+ ( /513233EB $noname  R20 1K {Lib=R}
+  (    1 /BLED )
+  (    2 N-000009 )
+ )
+ ( /5132337F $noname  R17 1K {Lib=R}
+  (    1 /DLED )
+  (    2 N-000035 )
+ )
+ ( /51323109 $noname  P15 Speaking_Pin {Lib=CONN_1}
+  (    1 /IsTalking )
+ )
+ ( /512A4383 $noname  C6 100nF {Lib=C}
+  (    1 N-000020 )
+  (    2 GND )
+ )
+ ( /5124A9C5 $noname  R11 10K {Lib=R}
+  (    1 N-000038 )
+  (    2 N-000020 )
+ )
+ ( /5124A9C2 $noname  R10 10K {Lib=R}
+  (    1 GND )
+  (    2 N-000038 )
+ )
+ ( /512118B7 $noname  P7 Loudspeaker {Lib=CONN_2}
+  (    1 N-000020 )
+  (    2 N-000019 )
+ )
+ ( /51211440 $noname  IC6 EMIC-2 {Lib=EMIC-2}
+  (    1 GND )
+  (    2 +5V )
+  (    3 N-000037 )
+  (    4 N-000036 )
+  (    5 N-000019 )
+  (    6 N-000020 )
+ )
+ ( /51211033 $noname  R9 10K {Lib=R}
+  (    1 N-000017 )
+  (    2 GND )
+ )
+ ( /51211028 $noname  R8 56K {Lib=R}
+  (    1 N-000017 )
+  (    2 /Bot_V+ )
+ )
+ ( /50E2CD89 $noname  IC3 XBee_Explorer_Regulated {Lib=XBEE_EXPLORER_REGULATED}
+  (    1 GND )
+  (    2 +5V )
+  (    3 /XBee-Rx )
+  (    4 /XBee-Tx )
+ )
+ ( /50E5D7D8 $noname  P9 Balance_Board {Lib=CONN_8}
+  (    1 GND )
+  (    2 +5V )
+  (    3 /RXD1 )
+  (    4 /TXD1 )
+  (    5 ? )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+ )
+ ( /50E5D492 $noname  C15 100nF {Lib=C}
+  (    1 /RST )
+  (    2 GND )
+ )
+ ( /50E56802 $noname  SW2 reset {Lib=SW_PUSH}
+  (    1 GND )
+  (    2 /RST )
+ )
+ ( /50E5677B AVR-ISP-6  AVR1 AVR-ISP-6 {Lib=AVR-ISP-6}
+  (    1 /MISO )
+  (    2 +5V )
+  (    3 /SCK )
+  (    4 /MOSI )
+  (    5 /RST )
+  (    6 GND )
+ )
+ ( /50E32297 $noname  F1 FUSE {Lib=FUSE}
+  (    1 +12V )
+  (    2 /LiPo_V+ )
+ )
+ ( /50DA33B3 $noname  P5 Power_in_3S_LiPo {Lib=CONN_2}
+  (    1 /LiPo_V+ )
+  (    2 GND )
+ )
+ ( /50DA339B $noname  D5 DIODE {Lib=DIODE}
+  (    1 +5V )
+  (    2 /Bot_V+ )
+ )
+ ( /50BB6034 $noname  R2 1K {Lib=R}
+  (    1 N-000048 )
+  (    2 N-000050 )
+ )
+ ( /50B25375 $noname  X1 CRYSTAL_OSSCI {Lib=CRYSTAL_OSSCI}
+  (    7 GND )
+  (    8 N-000041 )
+  (   14 +5V )
+ )
+ ( /50B25329 $noname  R1 10K {Lib=R}
+  (    1 +5V )
+  (    2 /RST )
+ )
+ ( /50B251F0 $noname  C4 47uF {Lib=CPOL}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /50B25185 $noname  C3 100nF {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /50B25175 $noname  C2 100nF {Lib=C}
+  (    1 /Bot_V+ )
+  (    2 GND )
+ )
+ ( /50B25162 $noname  C1 100uF {Lib=CPOL}
+  (    1 /Bot_V+ )
+  (    2 GND )
+ )
+ ( /50B25156 $noname  U1 7805 {Lib=7805}
+  (  GND GND )
+  (   VI /Bot_V+ )
+  (   VO +5V )
+ )
+ ( /50B250FF DIL40  IC1 ATMEGA644-P {Lib=ATMEGA644-P}
+  (    1 N-000037 )
+  (    2 N-000036 )
+  (    3 N-000033 )
+  (    4 ? )
+  (    5 ? )
+  (    6 /MOSI )
+  (    7 /MISO )
+  (    8 /SCK )
+  (    9 /RST )
+  (   10 +5V )
+  (   11 GND )
+  (   12 ? )
+  (   13 N-000041 )
+  (   14 /XBee-Rx )
+  (   15 /XBee-Tx )
+  (   16 /RXD1 )
+  (   17 /TXD1 )
+  (   18 ? )
+  (   19 ? )
+  (   20 N-000035 )
+  (   21 N-000034 )
+  (   22 /SCL )
+  (   23 /SDA )
+  (   24 ? )
+  (   25 ? )
+  (   26 ? )
+  (   27 ? )
+  (   28 /B-SW+ )
+  (   29 N-000009 )
+  (   30 +5V )
+  (   31 GND )
+  (   32 ? )
+  (   33 ? )
+  (   34 ? )
+  (   35 ? )
+  (   36 ? )
+  (   37 ? )
+  (   38 N-000038 )
+  (   39 N-000048 )
+  (   40 N-000017 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R23
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R21
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R22
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R14
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D6
+ D?
+ S*
+$endlist
+$component R18
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R19
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R20
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R17
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component R11
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C15
+ SM*
+ C?
+ C1-1
+$endlist
+$component D5
+ D?
+ S*
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component IC1
+ 40DIP-ELL600
+ 40dip600
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "/DLED" "DLED"
+ R17 1
+ P22 6
+Net 8 "GND" "GND"
+ P5 2
+ C15 2
+ C4 2
+ P1 2
+ IC1 11
+ IC1 31
+ U1 GND
+ C1 2
+ C2 2
+ C3 2
+ AVR1 6
+ SW2 1
+ P9 1
+ X1 7
+ P22 1
+ C6 2
+ K1 5
+ K1 4
+ R9 2
+ IC3 1
+ R10 1
+ IC6 1
+ D1 2
+ P4 5
+Net 9 "" ""
+ R20 2
+ IC1 29
+Net 11 "/PLED" "PLED"
+ P22 2
+ R14 2
+Net 16 "/XBee-Rx" "XBee-Rx"
+ IC1 14
+ IC3 3
+Net 17 "" ""
+ R8 1
+ R9 1
+ IC1 40
+Net 19 "" ""
+ IC6 5
+ P7 2
+Net 20 "" ""
+ C6 1
+ IC6 6
+ R11 2
+ P7 1
+Net 21 "/SCL" "SCL"
+ K1 3
+ R22 2
+ IC1 22
+Net 22 "/ELED" "ELED"
+ P22 3
+ R19 1
+Net 25 "/B-SW+" "B-SW+"
+ P4 4
+ IC1 28
+Net 26 "/M V+" "M V+"
+ P1 1
+ P4 1
+ R23 2
+Net 28 "/SDA" "SDA"
+ IC1 23
+ K1 2
+ R21 2
+Net 33 "" ""
+ R18 1
+ IC1 3
+Net 34 "" ""
+ IC1 21
+ R19 2
+Net 35 "" ""
+ R17 2
+ IC1 20
+Net 36 "" ""
+ IC1 2
+ IC6 4
+Net 37 "" ""
+ IC1 1
+ IC6 3
+Net 38 "" ""
+ R10 2
+ IC1 38
+ R11 1
+Net 39 "/XBee-Tx" "XBee-Tx"
+ IC1 15
+ IC3 4
+Net 41 "" ""
+ IC1 13
+ X1 8
+Net 43 "/RST" "RST"
+ D6 1
+ R1 2
+ IC1 9
+ C15 1
+ SW2 2
+ AVR1 5
+Net 44 "/MOSI" "MOSI"
+ AVR1 4
+ IC1 6
+Net 45 "/TXD1" "TXD1"
+ IC1 17
+ P9 4
+Net 46 "/RXD1" "RXD1"
+ P9 3
+ IC1 16
+Net 47 "/MISO" "MISO"
+ AVR1 1
+ IC1 7
+Net 48 "" ""
+ IC1 39
+ R2 1
+Net 50 "" ""
+ R2 2
+ D1 1
+Net 51 "/LiPo V+" "LiPo V+"
+ P5 1
+ F1 2
+Net 53 "/SCK" "SCK"
+ AVR1 3
+ IC1 8
+Net 54 "/MLED" "MLED"
+ R23 1
+ P22 4
+Net 55 "+12V" "+12V"
+ P4 2
+ F1 1
+Net 56 "/BLED" "BLED"
+ P22 5
+ R20 1
+Net 57 "/IsTalking" "IsTalking"
+ P15 1
+ R18 2
+Net 58 "/Bot V+" "Bot V+"
+ C2 1
+ R8 2
+ C1 1
+ U1 VI
+ D5 2
+ K1 1
+ P4 3
+Net 59 "+5V" "+5V"
+ IC6 2
+ R21 1
+ U1 VO
+ IC1 30
+ IC1 10
+ R1 1
+ P9 2
+ R14 1
+ C4 1
+ X1 14
+ IC3 2
+ D5 1
+ C3 1
+ R22 1
+ D6 2
+ AVR1 2
+}
+#End
