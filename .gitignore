@@ -5,3 +5,6 @@ source/BallBot/BallBotController/Debug/makedep.mk
 source/BallBot/MainController/Debug/Makefile
 source/BallBot/MainController/Debug/
 source/Arduino/
+docs/doc-Dateien/
+docs/doc.htm
+Mechanics/~$Construction.pptx
