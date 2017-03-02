@@ -17,7 +17,7 @@ I do not list the boring maths here, if you are interested please check the [Kin
 <img align="center"  width="400px" src="https://github.com/jochenalt/Paul/blob/master/docs/images/reverse kinematics.png" >
 
 On the left side are the angular speed of the omniwheels 1-3
-*r<sub>w</sub>* is the radius of one omniwheel, *r<sub>b</sub>* is the radius of the ball. *θ<sub>3</sub>* is the angle of motors's axis against the horizontal pane. *R<sup>T</sup> is the transposed rotation matrix that is given by the current two angles coming from the IMU:
+*r<sub>w</sub>* is the radius of one omniwheel, *r<sub>b</sub>* is the radius of the ball. *θ* is the angle of motors's axis against the horizontal pane. *R<sup>T</sup>* is the transposed rotation matrix that is given by the current two angles coming from the IMU:
 
 <img align="center" width="400px" src="https://github.com/jochenalt/Paul/blob/master/docs/images/rotation matrix.png" >
 
